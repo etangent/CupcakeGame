@@ -105,7 +105,9 @@ async def main():
         screen.blit(text_surface, (525, 0))
         pygame.display.flip()
 
-        await asyncio.sleep(1/60)
+        clock.tick(60)
+
+        await asyncio.sleep(0)
 
 
     
